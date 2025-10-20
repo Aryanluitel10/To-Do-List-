@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>My To-Do List ✨</h1>
+        
+        <div class="stats-container">
+            <div class="stat">
+                <span class="stat-number" id="total-tasks">0</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="completed-tasks">0</span>
+                <span class="stat-label">Completed</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="remaining-tasks">0</span>
+                <span class="stat-label">Remaining</span>
+            </div>
+        </div>
+
+        <form id="task-form">
+            <input
+                type="text"
+                id="task-input"
+                placeholder="What needs to be done today?"
+                autocomplete="off"
+                maxlength="100"
+            />
+            <button type="submit">Add Task</button>
+        </form>
+
+        <ul id="todo-list">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
